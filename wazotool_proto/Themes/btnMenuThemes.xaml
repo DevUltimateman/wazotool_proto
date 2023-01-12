@@ -32,7 +32,7 @@
                                 <TextBlock Text="{TemplateBinding Content }"
                                                VerticalAlignment="Center"
                                                HorizontalAlignment="Left"
-                                                Margin="10,0,0,0"
+                                                Margin="25,0,0,0"
                                             FontStyle="Italic"
                                            FontWeight="Bold"
                                            />
@@ -43,7 +43,7 @@
                 </Setter>
 
             <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="BorderThickness" Value="1"/>
 
 
 
@@ -51,7 +51,7 @@
 
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="#FF191233"/>
+                <Setter Property="Background" Value="#FF100007"/>
             </Trigger>
         </Style.Triggers>
 
