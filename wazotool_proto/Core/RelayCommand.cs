@@ -22,7 +22,6 @@ namespace wazotool_proto.Core
                 CommandManager.RequerySuggested += value;
 
             }
-
             remove
             {
                 CommandManager.RequerySuggested -= value;
@@ -34,5 +33,16 @@ namespace wazotool_proto.Core
             this._execute = execute;
             this._canExecute = canExecute;
         }   
+
+        public bool CanExecute( object pa )
+        {
+            return _canExecute == null || _canExecute(pa);
+
+        }
+
+        public void Execute ( object pa )
+        {
+            _execute(pa);
+        }
     }
 }
