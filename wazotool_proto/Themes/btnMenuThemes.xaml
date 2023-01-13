@@ -32,8 +32,8 @@
                                 <TextBlock Text="{TemplateBinding Content }"
                                                VerticalAlignment="Center"
                                                HorizontalAlignment="Left"
-                                                Margin="25,0,0,0"
-                                            FontStyle="Italic"
+                                                Margin="10,10,10,10"
+                                            
                                            FontWeight="Bold"
                                            />
 

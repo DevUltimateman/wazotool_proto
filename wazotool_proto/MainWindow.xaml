@@ -4,29 +4,51 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wazotool_proto"
+        xmlns:viewmodel ="clr-namespace:wazotool_proto.MVVM.ViewModel"
         mc:Ignorable="d"
         WindowStyle="None"
         AllowsTransparency="True"
         ResizeMode="NoResize"
-        Title="MainWindow" Height="540" Width="960" Background="#FF00121F" WindowStartupLocation="CenterScreen" Cursor="Hand">
+        Title="MainWindow" Height="720" Width="1280" Background="#FF00121F" WindowStartupLocation="CenterScreen" Cursor="Hand">
+
+
+    <Window.DataContext>
+        <viewmodel:MainViewModel>
+
+        </viewmodel:MainViewModel>
+
+
+    </Window.DataContext>
+
+
+
     <Border
         x:Name="bdMain"
-        Background="#FF1A0A33"
         CornerRadius="20"
         >
-
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1.15">
+                <GradientStop Color="#FF0C1B10" Offset="0.0"/>
+                <GradientStop Color="#FF290606" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        
+        
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="1035"/>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+
+
+
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="75"/>
-                <RowDefinition />
-                
+                <RowDefinition Height="575"/>
+                <RowDefinition Height="75"/>
+
             </Grid.RowDefinitions>
 
 
@@ -34,7 +56,7 @@
                 Text="WazoTool"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
-                Margin="25, 0, 0, 0"
+                Margin="10, 10, 10, 10"
                 Foreground ="White"
                 FontSize="36"
                 FontWeight="Bold"
@@ -43,20 +65,26 @@
 
 
             <StackPanel Grid.Row="1">
-                
+
                 <RadioButton
                     Content="Main Menu" 
                     Foreground="White"
                     FontSize="20"
                     Height="50"
-                        Style="{StaticResource btnMenuTheme}"/>
-                
+                    Style="{StaticResource btnMenuTheme}"
+                    Margin="0,85,0,0"
+                    Command="{Binding MainviewCmd}"
+                    />
+
+
                 <RadioButton
                         Content="Install Mods" 
                         Foreground="White"
                         FontSize="20"
                         Height="50"
-                        Style="{StaticResource btnMenuTheme}"/>
+                        Style="{StaticResource btnMenuTheme}"
+                        Command="{Binding BO2viewCmd}"
+                    />
 
                 <RadioButton
                         Content="Browse Mods" 
@@ -83,11 +111,18 @@
 
             </StackPanel>
 
+            
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
-                            Margin="10,0,0,0"/>
+                            Margin="10,0,0,0"
+                            Content="{Binding CurrentView }"
+                            />
 
         </Grid>
 
     </Border>
+
+
+
+
 </Window>

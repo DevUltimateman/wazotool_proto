@@ -2,12 +2,30 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:wazotool_proto"
+             xmlns:viewmodel ="clr-namespace:wazotool_proto.MVVM.ViewModel"
+             xmlns:view ="clr-namespace:wazotool_proto.MVVM.View"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                
+                <!--Custom stuff-->
                 <ResourceDictionary Source="Themes/btnMenuThemes.xaml"/> 
+                
+                
+                
             </ResourceDictionary.MergedDictionaries>
+            
+            <!--Custom stuff binds to viewmodels-->
+            <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+                <view:HomeView/>
+
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodel:BO2ViewModel}">
+                <view:BO2View/>
+            </DataTemplate>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

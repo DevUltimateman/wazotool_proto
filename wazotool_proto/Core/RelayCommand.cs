@@ -28,21 +28,21 @@ namespace wazotool_proto.Core
             }
         }
 
-        public RelayCommand(Action<object> execute, Func<object, bool> canExecute)
+        public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
         {
             this._execute = execute;
             this._canExecute = canExecute;
         }   
 
-        public bool CanExecute( object pa )
+        public bool CanExecute( object parameter )
         {
-            return _canExecute == null || _canExecute(pa);
+            return _canExecute == null || _canExecute(parameter);
 
         }
 
-        public void Execute ( object pa )
+        public void Execute ( object parameter )
         {
-            _execute(pa);
+            _execute(parameter);
         }
     }
 }

@@ -5,8 +5,247 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:wazotool_proto.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+             IsEnabled="True"
+             d:DesignHeight="540" d:DesignWidth="960">
+
+
+
+    <StackPanel Background="Black" >
+
+        <Grid Height="250">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="450"/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+
+            <Border 
+                Height="8"
+                Width="325" Margin="222,120,413,122" Opacity="0.75">
+
+                <Border.Background>
+
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FF00FFCA" Offset="1.0"/>
+                        <GradientStop Color="#FF00121F" Offset="0.0"/>
+                    </LinearGradientBrush>
+
+                </Border.Background>
+
+
+            </Border>
+
+            <Border 
+                Height="8"
+                Width="325" Margin="490,159,145,83" Opacity="0.75">
+
+                <Border.Background>
+
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FF00FFCA" Offset="0.0"/>
+                        <GradientStop Color="#FF00121F" Offset="1.0"/>
+                    </LinearGradientBrush>
+
+                </Border.Background>
+
+
+            </Border>
+
+
+
+
+
+            <Label x:Name="lblWazoMain"
+                   
+               
+               FontSize="72"
+               Content="Wazo"
+               FontStyle="Italic"
+               FontWeight="Bold"
+               FontStretch="ExtraCondensed"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"
+                   Grid.Column="1" Margin="109,28,99,82">
+                
+                
+                <!--DO COLOR FADE-->
+                <Label.Foreground>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FF00FFCA" Offset="0.0"/>
+                        <GradientStop Color="#FF00121F" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+                
+                
+
+            </Label>
+            <Label x:Name="lblToolMain"
+                   
+               
+               FontSize="84"
+               Content="Tool"
+               FontStyle="Italic"
+               FontWeight="Bold"
+               FontStretch="ExtraCondensed"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center" 
+                   Margin="210,50,25,10"
+                   Grid.Column="1">
+
+                <!--DO COLOR FADE-->
+                <Label.Foreground>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FFF5C4BC" Offset="0.0"/>
+                        <GradientStop Color="#FF72A9AD" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+                
+            </Label>
+        </Grid>
+
+        <TextBlock Text="Making mod enabling and tweaking &#x0a;easier for users by the tool."
+                   Foreground="AntiqueWhite"
+                   FontSize="18"
+                   FontStyle="Italic"
+                   HorizontalAlignment="Left"
+                   FontWeight="DemiBold"
+                   Margin="50,0,0,5"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Border Width="400"
+                    Height="200"
+                    Margin="50,0,0,0">
+
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FF00FFCA" Offset="0.0"/>
+                        <GradientStop Color="#FF00121F" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry 
+                        RadiusX="10"
+                        RadiusY="10"
+                        Rect="0,0,400,200"/>
+                </Border.Clip>
+
+
+                <Grid>
+                    <StackPanel>
+
+                        <TextBlock
+                            FontWeight="Bold"
+                            
+                            Text="Wazotool made for the community&#x0a;Public version x out now!" FontSize="22" Foreground="White" FontStretch="Condensed" Margin="20,10,10,10">
+                            
+
+                        </TextBlock>
+
+                        <TextBlock
+                            FontFamily="SegoeUI"
+                            FontWeight="Bold"
+                            Text="Installing mods made easy.&#x0a;Developed and updated &#x0a;by Ultimateman." FontSize="20" Foreground="White" FontStretch="Condensed" Margin="20,10,10,10"/>
+                    </StackPanel>
+
+
+                    <Image
+                        Source="/Images/toolclip1.png" Margin="260,68,-25,-33" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-9.466"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+
+
+
+            </Border>
+
+            <Border Width="200" 
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="25,0,0,0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FF39FFFA" Offset="0.0"/>
+                        <GradientStop Color="#FFFF005D" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+            </Border>
+
+            <Border Width="200" 
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="25,0,0,0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FFA0A0A0" Offset="0.0"/>
+                        <GradientStop Color="#FFA000FF" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+            </Border>
+        </StackPanel>
+        <!--
+        <StackPanel>
+            <TextBlock Text="Currently installed mods"
+                   Foreground="AntiqueWhite"
+                   FontSize="22"
+                   FontWeight="DemiBold"
+                   HorizontalAlignment="Left"
+                   Margin="0,10,0,10"/>
+
+            <StackPanel Orientation="Horizontal">
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="Azure"
+                        CornerRadius="10"
+                        
+                        
+                        />
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="DeepPink"
+                        CornerRadius="10"
+                        Margin="15,0,0,0"
+                        />
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="BlueViolet"
+                        CornerRadius="10"
+                        Margin="15,0,0,0"
+                        />
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="Cornsilk"
+                        CornerRadius="10"
+                        Margin="15,0,0,0"
+                        />
+
+            </StackPanel>
+        
             
-    </Grid>
+            
+            
+            
+            
+        </StackPanel>
+        -->
+    </StackPanel>
 </UserControl>
