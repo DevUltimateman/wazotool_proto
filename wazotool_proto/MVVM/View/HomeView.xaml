@@ -10,7 +10,10 @@
 
 
 
+    
     <StackPanel Background="Black" >
+
+        
 
         <Grid Height="250">
 
@@ -22,40 +25,10 @@
             </Grid.ColumnDefinitions>
 
 
-            <Border 
-                Height="8"
-                Width="325" Margin="222,120,413,122" Opacity="0.75">
-
-                <Border.Background>
-
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FF00FFCA" Offset="1.0"/>
-                        <GradientStop Color="#FF00121F" Offset="0.0"/>
-                    </LinearGradientBrush>
-
-                </Border.Background>
-
-
-            </Border>
-
-            <Border 
-                Height="8"
-                Width="325" Margin="490,159,145,83" Opacity="0.75">
-
-                <Border.Background>
-
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FF00FFCA" Offset="0.0"/>
-                        <GradientStop Color="#FF00121F" Offset="1.0"/>
-                    </LinearGradientBrush>
-
-                </Border.Background>
-
-
-            </Border>
 
 
 
+            
 
 
             <Label x:Name="lblWazoMain"
@@ -69,8 +42,8 @@
                VerticalContentAlignment="Center"
                HorizontalContentAlignment="Center"
                    Grid.Column="1" Margin="109,28,99,82">
-                
-                
+
+
                 <!--DO COLOR FADE-->
                 <Label.Foreground>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
@@ -78,8 +51,8 @@
                         <GradientStop Color="#FF00121F" Offset="1.0"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
-                
-                
+
+
 
             </Label>
             <Label x:Name="lblToolMain"
@@ -102,7 +75,7 @@
                         <GradientStop Color="#FF72A9AD" Offset="1.0"/>
                     </LinearGradientBrush>
                 </Label.Foreground>
-                
+
             </Label>
         </Grid>
 
@@ -142,7 +115,7 @@
                             FontWeight="Bold"
                             
                             Text="Wazotool made for the community&#x0a;Public version x out now!" FontSize="22" Foreground="White" FontStretch="Condensed" Margin="20,10,10,10">
-                            
+
 
                         </TextBlock>
 
@@ -182,8 +155,24 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
-            </Border>
+                <TextBlock Text="Plutonium profile, check it out from here. &#x0a;Placeholder text blah blah blah. "
+                           Foreground="White"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="15"
+                           Padding="10,0,0,0" TextWrapping="Wrap"
+                           >
+                    <TextBlock.Effect>
+                        <DropShadowEffect ShadowDepth="1"/>
+                    </TextBlock.Effect>
+                </TextBlock>
 
+            </Border>
+            
+            
+            
+            <!--Border / button for github button main view + box -->
             <Border Width="200" 
                     Height="200"
                     CornerRadius="10"
@@ -195,8 +184,23 @@
                         <GradientStop Color="#FFA000FF" Offset="1.0"/>
                     </LinearGradientBrush>
                 </Border.Background>
+                            <Image Source="/Images/gitwhite.png"
+                                      Width="45"
+                                      Height="45" Margin="78,17,77,138">
+
+                                <Image.Effect>
+                                    <DropShadowEffect ShadowDepth="1"/>
+                                </Image.Effect>
+
+
+                            </Image>
+                
+
+
 
             </Border>
+
+            
         </StackPanel>
         <!--
         <StackPanel>
@@ -247,5 +251,7 @@
             
         </StackPanel>
         -->
+
+
     </StackPanel>
 </UserControl>
