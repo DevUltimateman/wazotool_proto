@@ -23,6 +23,13 @@ namespace wazotool_proto.MVVM.View
         public BO2View()
         {
             InitializeComponent();
+            
+            
+        }
+
+        private void lstBo2Mods_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -10,198 +10,14 @@
 
 
 
-    
-    <StackPanel Background="Black" >
 
-        
-
-        <Grid Height="250">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="450"/>
-                <ColumnDefinition/>
-
-            </Grid.ColumnDefinitions>
+    <StackPanel >
 
 
 
 
 
-            
 
-
-            <Label x:Name="lblWazoMain"
-                   
-               
-               FontSize="72"
-               Content="Wazo"
-               FontStyle="Italic"
-               FontWeight="Bold"
-               FontStretch="ExtraCondensed"
-               VerticalContentAlignment="Center"
-               HorizontalContentAlignment="Center"
-                   Grid.Column="1" Margin="109,28,99,82">
-
-
-                <!--DO COLOR FADE-->
-                <Label.Foreground>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FF00FFCA" Offset="0.0"/>
-                        <GradientStop Color="#FF00121F" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Label.Foreground>
-
-
-
-            </Label>
-            <Label x:Name="lblToolMain"
-                   
-               
-               FontSize="84"
-               Content="Tool"
-               FontStyle="Italic"
-               FontWeight="Bold"
-               FontStretch="ExtraCondensed"
-               VerticalContentAlignment="Center"
-               HorizontalContentAlignment="Center" 
-                   Margin="210,50,25,10"
-                   Grid.Column="1">
-
-                <!--DO COLOR FADE-->
-                <Label.Foreground>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FFF5C4BC" Offset="0.0"/>
-                        <GradientStop Color="#FF72A9AD" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Label.Foreground>
-
-            </Label>
-        </Grid>
-
-        <TextBlock Text="Making mod enabling and tweaking &#x0a;easier for users by the tool."
-                   Foreground="AntiqueWhite"
-                   FontSize="18"
-                   FontStyle="Italic"
-                   HorizontalAlignment="Left"
-                   FontWeight="DemiBold"
-                   Margin="50,0,0,5"/>
-
-        <StackPanel Orientation="Horizontal">
-            <Border Width="400"
-                    Height="200"
-                    Margin="50,0,0,0">
-
-
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FF00FFCA" Offset="0.0"/>
-                        <GradientStop Color="#FF00121F" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-
-                <Border.Clip>
-                    <RectangleGeometry 
-                        RadiusX="10"
-                        RadiusY="10"
-                        Rect="0,0,400,200"/>
-                </Border.Clip>
-
-
-                <Grid>
-                    <StackPanel>
-
-                        <TextBlock
-                            FontWeight="Bold"
-                            
-                            Text="Wazotool made for the community&#x0a;Public version x out now!" FontSize="22" Foreground="White" FontStretch="Condensed" Margin="20,10,10,10">
-
-
-                        </TextBlock>
-
-                        <TextBlock
-                            FontFamily="SegoeUI"
-                            FontWeight="Bold"
-                            Text="Installing mods made easy.&#x0a;Developed and updated &#x0a;by Ultimateman." FontSize="20" Foreground="White" FontStretch="Condensed" Margin="20,10,10,10"/>
-                    </StackPanel>
-
-
-                    <Image
-                        Source="/Images/toolclip1.png" Margin="260,68,-25,-33" RenderTransformOrigin="0.5,0.5">
-                        <Image.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="-9.466"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Image.RenderTransform>
-                    </Image>
-                </Grid>
-
-
-
-            </Border>
-
-            <Border Width="200" 
-                    Height="200"
-                    CornerRadius="10"
-                    Margin="25,0,0,0">
-
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FF39FFFA" Offset="0.0"/>
-                        <GradientStop Color="#FFFF005D" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-
-                <TextBlock Text="Plutonium profile, check it out from here. &#x0a;Placeholder text blah blah blah. "
-                           Foreground="White"
-                           FontWeight="DemiBold"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="Center"
-                           FontSize="15"
-                           Padding="10,0,0,0" TextWrapping="Wrap"
-                           >
-                    <TextBlock.Effect>
-                        <DropShadowEffect ShadowDepth="1"/>
-                    </TextBlock.Effect>
-                </TextBlock>
-
-            </Border>
-            
-            
-            
-            <!--Border / button for github button main view + box -->
-            <Border Width="200" 
-                    Height="200"
-                    CornerRadius="10"
-                    Margin="25,0,0,0">
-
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FFA0A0A0" Offset="0.0"/>
-                        <GradientStop Color="#FFA000FF" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-                            <Image Source="/Images/gitwhite.png"
-                                      Width="45"
-                                      Height="45" Margin="78,17,77,138">
-
-                                <Image.Effect>
-                                    <DropShadowEffect ShadowDepth="1"/>
-                                </Image.Effect>
-
-
-                            </Image>
-                
-
-
-
-            </Border>
-
-            
-        </StackPanel>
         <!--
         <StackPanel>
             <TextBlock Text="Currently installed mods"
@@ -253,5 +69,341 @@
         -->
 
 
+
+
+
+
+        <!--
+        <StackPanel>
+            <TextBlock Text="Currently installed mods"
+                   Foreground="AntiqueWhite"
+                   FontSize="22"
+                   FontWeight="DemiBold"
+                   HorizontalAlignment="Left"
+                   Margin="0,10,0,10"/>
+
+            <StackPanel Orientation="Horizontal">
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="Azure"
+                        CornerRadius="10"
+                        
+                        
+                        />
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="DeepPink"
+                        CornerRadius="10"
+                        Margin="15,0,0,0"
+                        />
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="BlueViolet"
+                        CornerRadius="10"
+                        Margin="15,0,0,0"
+                        />
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="Cornsilk"
+                        CornerRadius="10"
+                        Margin="15,0,0,0"
+                        />
+
+            </StackPanel>
+        
+            
+            
+            
+            
+            
+        </StackPanel>
+        -->
+
+
+
+
+
+
+
+
+
+
+        <Grid Height="250">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="450"/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+
+
+
+
+
+
+
+            <Label x:Name="lblWazoMain"
+                   
+               
+               FontSize="72"
+               Content="Wazo"
+               FontStyle="Italic"
+               FontWeight="Bold"
+               FontStretch="ExtraCondensed"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"
+                   Grid.Column="1" Margin="109,28,99,82">
+
+
+                <!--DO COLOR FADE-->
+                <Label.Foreground>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FF00FFCA" Offset="0.0"/>
+                        <GradientStop Color="#FF00121F" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+
+
+
+            </Label>
+
+            <Image Source="/Images/toolclip1.png"
+                   Grid.Column="1" Margin="370,30,110,-10" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="6.598"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label x:Name="lblToolMain"
+                   
+               
+               FontSize="84"
+               Content="Tool"
+               FontStyle="Italic"
+               FontWeight="Bold"
+               FontStretch="ExtraCondensed"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center" 
+                   Margin="210,50,25,10"
+                   Grid.Column="1">
+
+                <!--DO COLOR FADE-->
+                <Label.Foreground>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FFF5C4BC" Offset="0.0"/>
+                        <GradientStop Color="#FF72A9AD" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+
+            </Label>
+        </Grid>
+
+        <TextBlock Text="Making mod enabling and tweaking &#xA;easier for users by the tool."
+                   Foreground="AntiqueWhite"
+                   FontSize="18"
+                   FontStyle="Italic"
+                   HorizontalAlignment="Left"
+                   FontWeight="DemiBold"
+                   Margin="50,0,0,5"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Border Width="400"
+                    Height="200"
+                    Margin="50,0,0,0">
+
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FF00FFCA" Offset="0.0"/>
+                        <GradientStop Color="#FF00121F" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry 
+                        RadiusX="10"
+                        RadiusY="10"
+                        Rect="0,0,400,200"/>
+                </Border.Clip>
+
+
+                <Grid>
+                    <StackPanel>
+
+                        <TextBlock
+                            FontWeight="Bold"
+                            
+                            Text="Wazotool made for the community&#xA;Public version x out now!" FontSize="22" Foreground="White" FontStretch="Condensed" Margin="20,10,10,10"/>
+
+                        <TextBlock
+                            FontFamily="SegoeUI"
+                            FontWeight="Bold"
+                            Text="Installing mods made easy.&#xA;Developed and updated &#xA;by Ultimateman." FontSize="20" Foreground="White" FontStretch="Condensed" Margin="20,10,10,10"/>
+                    </StackPanel>
+
+
+                    <Image
+                        Source="/Images/toolclip1.png" Margin="260,68,-25,-33" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-9.466"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+
+
+
+            </Border>
+
+
+            <!--Border / button for github button main view + box -->
+            <Border Width="200" 
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="25,0,0,0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FFA0A0A0" Offset="0.0"/>
+                        <GradientStop Color="#FFA000FF" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <Image Source="/Images/gitwhite.png"
+                                      Width="45"
+                                      Height="45" Margin="130,27,25,128">
+
+                        <Image.Effect>
+                            <DropShadowEffect ShadowDepth="1"/>
+                        </Image.Effect>
+
+
+                    </Image>
+
+                    <TextBlock Text="My github profile. The source can be found from there."
+                               Foreground="White"
+                               FontWeight="DemiBold"
+                               FontStyle="Italic"
+                               FontSize="22"
+                               TextWrapping="Wrap"
+                               Margin="15,22,35,28"
+                               Width="150"
+                               Height="150"
+                               />
+                </Grid>
+
+
+
+
+
+            </Border>
+
+
+            <Border Width="200" 
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="25,0,0,0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FF1E3469" Offset="0.0"/>
+                        <GradientStop Color="#FF54001F" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+
+                    <Image Source="/Images/pluto.png"
+                           Opacity="0.2"/>
+                    <TextBlock Text="Plutonium profile, check it out from here. &#xA;Placeholder text blah blah blah.&#xA;More plutonium mods can be found from Browse Mods section. "
+                           Foreground="White"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="15"
+                           Padding="10,0,0,0" TextWrapping="Wrap"
+                           >
+                        <TextBlock.Effect>
+                            <DropShadowEffect ShadowDepth="1"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+
+
+                </Grid>
+
+
+
+
+            </Border>
+
+
+
+
+
+        </StackPanel>
+        <!--
+        <StackPanel>
+            <TextBlock Text="Currently installed mods"
+                   Foreground="AntiqueWhite"
+                   FontSize="22"
+                   FontWeight="DemiBold"
+                   HorizontalAlignment="Left"
+                   Margin="0,10,0,10"/>
+
+            <StackPanel Orientation="Horizontal">
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="Azure"
+                        CornerRadius="10"
+                        
+                        
+                        />
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="DeepPink"
+                        CornerRadius="10"
+                        Margin="15,0,0,0"
+                        />
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="BlueViolet"
+                        CornerRadius="10"
+                        Margin="15,0,0,0"
+                        />
+
+                <Border Width="150" 
+                        Height="150"
+                        Background="Cornsilk"
+                        CornerRadius="10"
+                        Margin="15,0,0,0"
+                        />
+
+            </StackPanel>
+        
+            
+            
+            
+            
+            
+        </StackPanel>
+        -->
     </StackPanel>
+
+
 </UserControl>

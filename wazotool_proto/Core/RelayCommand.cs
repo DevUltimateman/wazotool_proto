@@ -42,6 +42,7 @@ namespace wazotool_proto.Core
 
         public void Execute ( object parameter )
         {
+            
             _execute(parameter);
         }
     }

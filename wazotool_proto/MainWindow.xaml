@@ -28,12 +28,12 @@
         >
         <Border.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1.15">
-                <GradientStop Color="#FF0C1B10" Offset="0.0"/>
-                <GradientStop Color="#FF290606" Offset="1"/>
+                <GradientStop Color="#FF1C0027" Offset="0.0"/>
+                <GradientStop Color="#FF000410" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
-        
-        
+
+
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
@@ -54,13 +54,12 @@
 
             <TextBlock
                 Text="WazoTool"
-                VerticalAlignment="Center"
+                VerticalAlignment="Top"
                 HorizontalAlignment="Left"
-                Margin="10, 10, 10, 10"
                 Foreground ="White"
-                FontSize="36"
-                FontWeight="Bold"
-                FontStyle="Italic"
+                FontSize="18"
+                FontWeight="DemiBold" Margin="20,14,0,0"
+                
                 />
 
 
@@ -111,7 +110,7 @@
 
             </StackPanel>
 
-            
+
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
                             Margin="10,0,0,0"

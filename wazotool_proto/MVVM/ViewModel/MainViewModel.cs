@@ -42,10 +42,10 @@ namespace wazotool_proto.MVVM.ViewModel
             CurrentView  =  HomeVM;
 
 
-            BO2viewCmd = new RelayCommand(o =>
-            { 
-                CurrentView = BO2VM; 
-            });
+            BO2viewCmd = new RelayCommand(o => {CurrentView = BO2VM; });
+
+
+
 
             MainviewCmd = new RelayCommand(o => { CurrentView = HomeVM; });
             

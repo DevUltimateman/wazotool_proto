@@ -14,8 +14,7 @@
 
 
 
-
-
+    
     <Style BasedOn="{StaticResource {x:Type ToggleButton} }"
            TargetType="{x:Type RadioButton }"
            x:Key="btnMenuTheme">
@@ -45,14 +44,16 @@
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="1"/>
 
-
+            
 
         </Style.Setters>
 
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="#FF100007"/>
+                <Setter Property="Background" Value="#FF24BDB2"/>
+                
             </Trigger>
+            
         </Style.Triggers>
 
         

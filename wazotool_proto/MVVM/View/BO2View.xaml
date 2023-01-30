@@ -71,7 +71,7 @@
                     Background="Transparent"
                     BorderBrush="#FF212C4A"
                     Height="150"
-                    Width="300"/>
+                    Width="300" SelectionChanged="lstBo2Mods_SelectionChanged"/>
             </Border>
 
 
